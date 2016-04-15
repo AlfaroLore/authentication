@@ -5,7 +5,7 @@ export default Ember.Component.extend({
     quote: "",
     actions: {
         getQuote: function() {
-	        	this.get('session').authorize('authorizer:cusmtom', (headerName, headerValue) => { 
+	        	this.get('session').authorize('authorizer:custom', (headerName, headerValue) => { 
 	        	const headers = {};
 	        	headers[headerName] = headerValue;
 	            var that = this;
