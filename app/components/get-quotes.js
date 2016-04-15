@@ -3,7 +3,7 @@ export default Ember.Component.extend({
 	session: Ember.inject.service(),
     gotQuote: false,
     quote: "",
-    actions: {
+    actions: {    	
         getQuote: function() {
 	        	this.get('session').authorize('authorizer:custom', (headerName, headerValue) => { 
 	        	const headers = {};
